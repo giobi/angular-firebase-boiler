@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hubmot">
+<head>
+  <meta charset="UTF-8">
+  <title>Hubmot 0</title>
+  
+  <base href="/hubmot/public/app/">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.js"></script>
+  
+  <script type="text/javascript" src="/hubmot/public/app/ng/index.js"></script>
+  <script type="text/javascript" src="/hubmot/public/app/ng/auth/index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+</head>
+<body>
+  <md-nav-bar md-selected-nav-item="register">
+    <md-nav-item md-nav-href="#/register" name="register" aria-label="register">Register</md-nav-item>
+  </md-nav-bar>
+  <div layout="row" layout-align="center center">
+    <ng-view></ng-view>
+  </div>
+</body>
+</html>
