@@ -1,16 +1,15 @@
 (function() {
-'use strict'; angular.module('hubmot')
+'use strict'; angular.module('app')
   
 .service('api', function($http) {
-  var r = {
-    base: '/hubmot/public/api/',
+  return {
+    base: '/api/0/',
     call: function(url, input, verb) {
       if (!verb) verb = 'post';
       url = this.base + url;
       return $http[verb](url, input);
     }
   };
-  return r;
 })
 .controller('register', function(api) {
   var s = this;

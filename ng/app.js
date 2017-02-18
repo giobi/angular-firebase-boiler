@@ -1,5 +1,5 @@
 (function() {
-'use strict'; angular.module('hubmot', ['ngRoute', 'ngMaterial'])
+'use strict'; angular.module('app', ['ngRoute', 'ngMaterial'])
   
 .config(function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/register/'})
