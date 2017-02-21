@@ -1,5 +1,5 @@
 (function() {
-'use strict'; angular.module('app', ['ngRoute', 'ngMaterial'])
+'use strict'; angular.module('app', ['ngRoute', 'ngMaterial', 'firebase'])
   
 .config(function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/register/'})
